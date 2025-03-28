@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edu Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body class="bg-gradient-to-r from-purple-200 to-pink-200 min-h-screen font-sans flex justify-center pt-10 px-4">
+
+    <!-- Fondo blanco principal -->
+    <div class="bg-white w-full max-w-[1600px] rounded-3xl shadow-xl flex overflow-hidden">
+
+      <!-- Sidebar -->
+      <aside class="w-64 bg-gradient-to-b from-indigo-100 to-purple-200 p-6 flex flex-col justify-between rounded-tr-[60px] rounded-br-[60px] shadow-lg relative z-20">
+        <div>
+          <!-- Logo -->
+          <div class="flex items-center gap-2 text-xl font-bold text-indigo-900 mb-14">
+            <div class="w-9 h-9 bg-indigo-900 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons text-sm">explore</span>
+            </div>
+            <span>edu</span>
+          </div>
+
+          <!-- Menu -->
+          <nav id="menu" class="flex flex-col gap-6 text-sm relative">
+            <div class="menu-item flex items-center gap-3 text-gray-700 hover:text-indigo-900 py-2 pl-4 pr-6 rounded-l-full transition-all cursor-pointer relative" data-item="Schedule">
+              <span class="material-icons text-base">calendar_today</span>
+              <span>Schedule</span>
+            </div>
+            <div class="menu-item flex items-center gap-3 text-gray-700 hover:text-indigo-900 py-2 pl-4 pr-6 rounded-l-full transition-all cursor-pointer relative" data-item="Progress">
+              <span class="material-icons text-base">bar_chart</span>
+              <span>Progress</span>
+            </div>
+            <div class="menu-item flex items-center gap-3 text-gray-700 hover:text-indigo-900 py-2 pl-4 pr-6 rounded-l-full transition-all cursor-pointer relative" data-item="Messages">
+              <span class="material-icons text-base">chat_bubble_outline</span>
+              <span>Messages</span>
+            </div>
+            <div class="menu-item flex items-center gap-3 text-gray-700 hover:text-indigo-900 py-2 pl-4 pr-6 rounded-l-full transition-all cursor-pointer relative" data-item="Settings">
+              <span class="material-icons text-base">settings</span>
+              <span>Settings</span>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Log out -->
+        <div class="px-2">
+          <button class="flex items-center gap-2 text-sm text-gray-600 hover:text-red-500 transition-all">
+            <span class="material-icons text-base">logout</span>
+            <span>Log out</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6 z-10 bg-white">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+          <input type="text" placeholder="Search" class="w-1/3 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-all" />
+          <div class="flex items-center gap-4">
+            <img src="das1.jpeh" alt="User" class="w-10 h-10 rounded-full border-2 border-indigo-500 hover:scale-105 transition-transform" />
+            <span class="font-semibold text-gray-700">Kate G.</span>
+          </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="bg-indigo-900 text-white p-6 rounded-2xl relative overflow-hidden hover:shadow-xl transition-all">
+          <h2 class="text-2xl font-bold mb-2">Effective education!</h2>
+          <p>Learning is easy and effective with us. Open the panel and watch your progress and growth in knowledge!</p>
+          <img src="das.png" alt="3D elements" class="absolute right-4 bottom-4 w-20 opacity-70 animate-bounce" />
+        </div>
+
+        <!-- Events -->
+        <div class="mt-6 grid grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all cursor-pointer">
+            <p class="text-sm text-gray-500">26.02</p>
+            <p class="text-lg font-semibold">UX/UI workshop</p>
+            <p class="text-xs text-gray-400">18:00 - 19:30</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all cursor-pointer">
+            <p class="text-sm text-gray-500">02.03</p>
+            <p class="text-lg font-semibold">English lecture</p>
+            <p class="text-xs text-gray-400">18:00 - 19:30</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all cursor-pointer">
+            <p class="text-sm text-gray-500">07.03</p>
+            <p class="text-lg font-semibold">Business lecture</p>
+            <p class="text-xs text-gray-400">18:00 - 19:30</p>
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="mt-6 grid grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all">
+            <p class="font-semibold mb-2">Timing & progress</p>
+            <div class="h-32 bg-gray-100 rounded flex items-center justify-center overflow-hidden">
+              <img src="grafico.png" alt="Timing & progress chart" class="max-h-full object-contain" />
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-all">
+            <p class="font-semibold mb-2">Progress by Subject</p>
+            <div class="space-y-2">
+              <p>Computer Science <span class="float-right">37%</span></p>
+              <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-blue-500 transition-all duration-500 w-[37%]"></div></div>
+              <p>Science <span class="float-right">83%</span></p>
+              <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-green-500 transition-all duration-500 w-[83%]"></div></div>
+              <p>Business <span class="float-right">51%</span></p>
+              <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-yellow-500 transition-all duration-500 w-[51%]"></div></div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Panel -->
+      <aside class="w-72 p-6 bg-white">
+        <h3 class="text-lg font-semibold mb-4">Your Courses</h3>
+        <ul class="space-y-3">
+          <li class="flex justify-between bg-white p-3 rounded-xl shadow hover:bg-indigo-50 transition-all cursor-pointer">
+            <span>Art</span><span class="text-sm text-gray-500">35 hours</span>
+          </li>
+          <li class="flex justify-between bg-white p-3 rounded-xl shadow hover:bg-indigo-50 transition-all cursor-pointer">
+            <span>Business</span><span class="text-sm text-gray-500">40 hours</span>
+          </li>
+          <li class="flex justify-between bg-white p-3 rounded-xl shadow hover:bg-indigo-50 transition-all cursor-pointer">
+            <span>Science</span><span class="text-sm text-gray-500">25 hours</span>
+          </li>
+          <li class="flex justify-between bg-white p-3 rounded-xl shadow hover:bg-indigo-50 transition-all cursor-pointer">
+            <span>Mathematics</span><span class="text-sm text-gray-500">15 hours</span>
+          </li>
+        </ul>
+        <div class="mt-6 bg-indigo-900 text-white p-4 rounded-2xl text-center hover:brightness-110 transition-all">
+          <p class="mb-2">Upgrade to Premium</p>
+          <img src="das.png" alt="3D upgrade" class="mx-auto w-16 opacity-70 animate-pulse" />
+        </div>
+      </aside>
+    </div>
+
+    <!-- Script para activar menú -->
+    <script>
+      const menuItems = document.querySelectorAll(".menu-item");
+
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          menuItems.forEach((i) => {
+            i.classList.remove("bg-white", "text-indigo-900", "font-semibold");
+            i.classList.remove("after:content-['']", "after:absolute", "after:-top-4", "after:right-0", "after:h-4", "after:w-4", "after:bg-purple-200", "after:rounded-br-3xl");
+            i.classList.remove("before:content-['']", "before:absolute", "before:-bottom-4", "before:right-0", "before:h-4", "before:w-4", "before:bg-purple-200", "before:rounded-tr-3xl");
+          });
+
+          item.classList.add("bg-white", "text-indigo-900", "font-semibold");
+          item.classList.add("relative", "z-10");
+          item.classList.add("after:content-['']", "after:absolute", "after:-top-4", "after:right-0", "after:h-4", "after:w-4", "after:bg-purple-200", "after:rounded-br-3xl");
+          item.classList.add("before:content-['']", "before:absolute", "before:-bottom-4", "before:right-0", "before:h-4", "before:w-4", "before:bg-purple-200", "before:rounded-tr-3xl");
+        });
+      });
+
+      // Activa por defecto el primero
+      menuItems[0].click();
+    </script>
+  </body>
+</html>
