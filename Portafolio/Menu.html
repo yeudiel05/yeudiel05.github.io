@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bienvenida y Menú</title>
+  <title>Portafolio</title>
   <style>
     body {
       font-family: sans-serif;
@@ -28,6 +28,7 @@
     nav {
       background-color: #333;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
     }
 
@@ -35,6 +36,7 @@
       color: white;
       padding: 15px 20px;
       text-decoration: none;
+      margin: 2px;
     }
 
     nav a:hover {
@@ -59,24 +61,28 @@
 
   <!-- Bienvenida -->
   <div id="bienvenida">
-    <h1>Bienvenido a mi sitio</h1>
-    <p>Haz clic en el botón para comenzar</p>
-    <button id="inicioBtn">Entrar</button>
+    <h1>Bienvenido a tu Portafolio</h1>
+    <p>Haz clic para ver las páginas disponibles</p>
+    <button id="inicioBtn">Ver Páginas</button>
   </div>
 
   <!-- Menú y Contenido -->
   <div id="menuYContenido">
     <nav>
-      <a href="pagina1.html" target="contenido" class="active" onclick="cambiarActivo(this)">Página 1</a>
-      <a href="pagina2.html" target="contenido" onclick="cambiarActivo(this)">Página 2</a>
-      <a href="pagina3.html" target="contenido" onclick="cambiarActivo(this)">Página 3</a>
+      <a href="audifono.html" target="contenido" class="active" onclick="cambiarActivo(this)">Audífono</a>
+      <a href="blog.html" target="contenido" onclick="cambiarActivo(this)">Blog</a>
+      <a href="cuadro.html" target="contenido" onclick="cambiarActivo(this)">Cuadro</a>
+      <a href="cuenta.HTML" target="contenido" onclick="cambiarActivo(this)">Cuenta</a>
+      <a href="dashboard.html" target="contenido" onclick="cambiarActivo(this)">Dashboard</a>
+      <a href="layout.html" target="contenido" onclick="cambiarActivo(this)">Layout</a>
+      <a href="usuario.html" target="contenido" onclick="cambiarActivo(this)">Usuario</a>
     </nav>
 
-    <iframe name="contenido" src="pagina1.html"></iframe>
+    <iframe name="contenido" src="audifono.html"></iframe>
   </div>
 
   <script>
-    // Mostrar menú y contenido, ocultar bienvenida
+    // Mostrar menú y contenido
     document.getElementById('inicioBtn').onclick = function () {
       document.getElementById('bienvenida').style.display = 'none';
       document.getElementById('menuYContenido').style.display = 'block';

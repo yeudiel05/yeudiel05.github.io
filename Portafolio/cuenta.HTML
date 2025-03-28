@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuración de Cuenta</title>
+    <style>
+        .plan {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AFTER</h1>
+    <h2>Subidor</h2>
+    <nav>
+        <a href="#">Descubrir</a> |
+        <a href="#">Conectar</a> |
+        <a href="#">Comunidad</a> |
+        <a href="#">Empleos</a>
+    </nav>
+    
+    <h2>Configuración de Cuenta</h2>
+    
+    <h3>Básico</h3>
+    <p>Tener un correo electrónico actualizado vinculado a tu cuenta es un gran paso para mejorar la seguridad de tu cuenta.</p>
+    <label>Correo electrónico: <input type="email"></label><br>
+    <label>Contraseña: <button>Cambiar tu contraseña</button></label><br>
+    <label>País: <select><option>Elegir...</option></select></label><br>
+    <label>Idioma: <select><option>Elegir...</option></select></label>
+    
+    <h3>Perfil</h3>
+    <p>Esta información será visible públicamente, así que ten cuidado con la información que proporcionas.</p>
+    <label>Nombre: <input type="text"></label>
+    <label>Apellido: <input type="text"></label><br>
+    <label>Foto: <input type="file" accept="image/*"></label><br>
+    <label>Nombre de usuario: <input type="text"></label><br>
+    <label>Acerca de ti: <textarea></textarea></label>
+    
+    <h3>Facturación</h3>
+    <p>Elige el plan que mejor se adapte a tus necesidades.</p>
+    
+    <h4>Cambiar Plan</h4>
+    <div class="plan">
+        <strong>Basic</strong><br>
+        1 GB Uploads<br>
+        $5/month
+        <br><label><input type="radio" name="plan"> Seleccionar</label>
+    </div>
+    <div class="plan">
+        <strong>Essential</strong><br>
+        5 GB Uploads<br>
+        $10/month
+        <br><label><input type="radio" name="plan"> Seleccionar</label>
+    </div>
+    <div class="plan">
+        <strong>Pro</strong><br>
+        15 GB Uploads<br>
+        $20/month
+        <br><label><input type="radio" name="plan"> Seleccionar</label>
+    </div>
+    
+    <a href="#">Cancelar suscripción</a>
+    
+    <h4>Método de Pago</h4>
+    <p>Visa terminada en 5555<br>Expira: 1/2022</p>
+    <button>Actualizar</button>
+    
+    <h3>Notificaciones</h3>
+    <p>Recibe notificaciones de actividad en tu cuenta. Las notificaciones serán enviadas al correo electrónico que proporcionaste.</p>
+    <label><input type="checkbox" checked> Actividad de Cuenta - Recibe notificaciones importantes sobre tu actividad que te perdiste</label><br>
+    <label><input type="checkbox"> Novedades para Ti - Un correo semanal con actividad de personas que sigues</label><br>
+    <label><input type="checkbox"> Encuentros Cerca de Ti - Recibe un correo cuando se publique un encuentro cerca de tu ubicación</label><br>
+    <label><input type="checkbox"> Noticias de la Empresa - Recibe correos con noticias, anuncios y actualizaciones de productos</label><br>
+    <label><input type="checkbox"> Empleos Semanales - Resumen semanal de empleos de diseño</label><br>
+    
+    <button>Cancelar</button>
+    <button>Guardar Configuración</button>
+</body>
+</html>
